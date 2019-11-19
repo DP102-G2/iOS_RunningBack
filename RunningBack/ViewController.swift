@@ -12,9 +12,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setBarButtonItem()
     }
 
 
 }
 
+extension  ViewController{
+    
+    func setBarButtonItem() {
+        let admin = UIBarButtonItem(image: UIImage(named: "ic_Admin"), style: .done, target: self, action: #selector(naviToAdmin))
+        navigationItem.rightBarButtonItems = [admin]
+    }
+    
+    @objc  func naviToAdmin() {
+        let storyboard = UIStoryboard(name: "Admin", bundle: nil)
+        let setTabBar = storyboard.instantiateViewController(identifier: "AdminNC") as! AdminNC
+        setTabBar.modalPresentationStyle = .fullScreen
+        navigationController?.removeFromParent()
+        present(setTabBar, animated: true, completion: nil)
+    }
+    
+    
+}

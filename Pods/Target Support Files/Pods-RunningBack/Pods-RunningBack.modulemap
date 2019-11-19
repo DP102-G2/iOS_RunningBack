@@ -1,0 +1,6 @@
+framework module Pods_RunningBack {
+  umbrella header "Pods-RunningBack-umbrella.h"
+
+  export *
+  module * { export * }
+}

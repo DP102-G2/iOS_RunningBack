@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9o9-zx-Far">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="20y-jN-Vqe">
+            <objects>
+                <viewController id="V7b-6n-iEB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uh5-mJ-2Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vSb-Rg-geE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RvQ-lb-dIS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5M-YG-eYE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.11594202898561" y="102.45535714285714"/>
+        </scene>
+        <!--銷售-->
+        <scene sceneID="k5o-yh-iwn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9o9-zx-Far" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="銷售" image="ic_Sale" id="6Gu-Uw-0dD"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="quI-nO-s3R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V7b-6n-iEB" kind="relationship" relationship="rootViewController" id="X68-BX-vPm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYh-fZ-1DP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_Sale" width="32" height="31.5"/>
+    </resources>
+</document>
