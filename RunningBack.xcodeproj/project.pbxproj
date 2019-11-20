@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7EF2BCF7B8B0EA0C24083494 /* Pods_RunningBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2FC7BE74675D51DA348B43 /* Pods_RunningBack.framework */; };
 		A93186A623845CB7005D7E9A /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93186A523845CB7005D7E9A /* Admin.storyboard */; };
 		A93186A823845E30005D7E9A /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93186A723845E30005D7E9A /* AdminVC.swift */; };
+		A93186AC23856031005D7E9A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93186AB23856031005D7E9A /* Common.swift */; };
 		A93668F9238456D900088087 /* ad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93668F8238456D900088087 /* ad.storyboard */; };
 		A93668FC2384590500088087 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93668FB2384590500088087 /* User.storyboard */; };
 		A97F443B238459EE00620E96 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97F443A238459EE00620E96 /* Product.storyboard */; };
@@ -30,6 +31,7 @@
 		4583C01A067B648F48B0FE72 /* Pods-RunningBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningBack.release.xcconfig"; path = "Target Support Files/Pods-RunningBack/Pods-RunningBack.release.xcconfig"; sourceTree = "<group>"; };
 		A93186A523845CB7005D7E9A /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		A93186A723845E30005D7E9A /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		A93186AB23856031005D7E9A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A93668F8238456D900088087 /* ad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ad.storyboard; sourceTree = "<group>"; };
 		A93668FB2384590500088087 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		A97F443A238459EE00620E96 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
@@ -74,8 +76,15 @@
 				B1B9C8657C064E2086C602E1 /* Pods-RunningBack.debug.xcconfig */,
 				4583C01A067B648F48B0FE72 /* Pods-RunningBack.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A93186AD23856036005D7E9A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A93186AB23856031005D7E9A /* Common.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A93668FA238458B700088087 /* storyboard */ = {
@@ -113,6 +122,7 @@
 		A9C01CF923842794008C6FE9 /* RunningBack */ = {
 			isa = PBXGroup;
 			children = (
+				A93186AD23856036005D7E9A /* Common */,
 				A9C01CFA23842794008C6FE9 /* AppDelegate.swift */,
 				A9C01CFC23842794008C6FE9 /* SceneDelegate.swift */,
 				A9C01CFE23842794008C6FE9 /* ViewController.swift */,
@@ -254,6 +264,7 @@
 				A9C01CFB23842794008C6FE9 /* AppDelegate.swift in Sources */,
 				A93186A823845E30005D7E9A /* AdminVC.swift in Sources */,
 				A9C01CFD23842794008C6FE9 /* SceneDelegate.swift in Sources */,
+				A93186AC23856031005D7E9A /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
