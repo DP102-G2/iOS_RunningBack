@@ -25,7 +25,7 @@ class AdTVC: PlateTVC {
     }
     
     @objc func showAllAds() {
-        let requestParam = ["action" : "getAll","action": "getImage"]
+        let requestParam = ["action" : "getAll"]
         executeTask(url_server!, requestParam) { (data, response, error) in
             if error == nil {
                 if data != nil {
