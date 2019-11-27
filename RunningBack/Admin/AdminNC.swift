@@ -1,11 +1,3 @@
-//
-//  SettingNC.swift
-//  RunningBack
-//
-//  Created by FanFan on 2019/11/20.
-//  Copyright © 2019 g2. All rights reserved.
-//
-
 import UIKit
 
 class AdminNC: UINavigationController {

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAi-PX-aPX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
         <scene sceneID="tlu-lT-l2N">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sAi-PX-aPX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="商品" image="ic_Product" id="fQZ-Z7-YkP"/>
+                    <tabBarItem key="tabBarItem" title="商品" image="ic_product" id="fQZ-Z7-YkP"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="93j-aM-6L9">
@@ -45,6 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_Product" width="31.5" height="31.5"/>
+        <image name="ic_product" width="31.5" height="31.5"/>
     </resources>
 </document>
