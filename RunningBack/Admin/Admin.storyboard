@@ -414,25 +414,14 @@
                                     <action selector="selectClick:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="48c-mX-QDO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-1g-VRH">
-                                <rect key="frame" x="102" y="600" width="213" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="E4b-rJ-Nzq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vdc-4D-fvz" firstAttribute="bottom" secondItem="mv1-TS-koW" secondAttribute="bottom" constant="327" id="2lF-3q-AfI"/>
-                            <constraint firstItem="yVY-1g-VRH" firstAttribute="top" secondItem="5OD-A7-WmB" secondAttribute="bottom" constant="65" id="7je-Ar-FA8"/>
                             <constraint firstItem="8iL-9E-baq" firstAttribute="centerX" secondItem="5OD-A7-WmB" secondAttribute="centerX" id="7mr-Ar-0T3"/>
                             <constraint firstItem="Y27-OQ-QqF" firstAttribute="top" secondItem="vdc-4D-fvz" secondAttribute="top" constant="50" id="8ja-CP-nKx"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="trailing" secondItem="e0u-MF-ybP" secondAttribute="trailing" id="DMe-Bh-5qu"/>
                             <constraint firstItem="Kdl-aD-avo" firstAttribute="top" secondItem="8iL-9E-baq" secondAttribute="bottom" constant="31" id="GV5-Lp-Jtg"/>
-                            <constraint firstItem="yVY-1g-VRH" firstAttribute="trailing" secondItem="8iL-9E-baq" secondAttribute="trailing" id="RaT-f6-R2w"/>
                             <constraint firstItem="s0w-za-BQA" firstAttribute="leading" secondItem="Y27-OQ-QqF" secondAttribute="trailing" constant="44" id="aPr-9l-4e0"/>
                             <constraint firstItem="Y27-OQ-QqF" firstAttribute="leading" secondItem="vdc-4D-fvz" secondAttribute="leading" constant="87" id="avV-JU-osG"/>
                             <constraint firstItem="mv1-TS-koW" firstAttribute="centerX" secondItem="Y27-OQ-QqF" secondAttribute="centerX" id="bAK-oM-LjR"/>
@@ -445,7 +434,6 @@
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="top" secondItem="MxW-lL-T6T" secondAttribute="top" constant="210" id="oMC-JM-SqO"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="leading" secondItem="8iL-9E-baq" secondAttribute="leading" id="uLa-BZ-of2"/>
                             <constraint firstItem="mv1-TS-koW" firstAttribute="baseline" secondItem="5OD-A7-WmB" secondAttribute="baseline" id="umU-iF-R1V"/>
-                            <constraint firstItem="yVY-1g-VRH" firstAttribute="leading" secondItem="mv1-TS-koW" secondAttribute="leading" id="vtc-yG-Md3"/>
                             <constraint firstItem="Kdl-aD-avo" firstAttribute="leading" secondItem="5OD-A7-WmB" secondAttribute="leading" id="yvS-DQ-7Ca"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="trailing" secondItem="8iL-9E-baq" secondAttribute="trailing" id="zVA-xM-aDK"/>
                         </constraints>
@@ -454,7 +442,6 @@
                     <navigationItem key="navigationItem" id="Ece-vj-qGX"/>
                     <connections>
                         <outlet property="btJob" destination="Kdl-aD-avo" id="ABq-Zr-G0m"/>
-                        <outlet property="isFail" destination="yVY-1g-VRH" id="M0F-kW-0s5"/>
                         <outlet property="myView" destination="B3l-Xj-Anc" id="BEU-JL-csi"/>
                         <outlet property="pickerView" destination="KB5-Q5-DnB" id="ELq-D2-plZ"/>
                         <outlet property="tfId" destination="NJl-UA-4qS" id="kNx-uS-Yj2"/>

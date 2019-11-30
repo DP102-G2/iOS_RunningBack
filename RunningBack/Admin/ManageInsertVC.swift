@@ -8,7 +8,6 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBOutlet weak var pickerView: UIPickerView!
     
-    @IBOutlet weak var isFail: UILabel!
     @IBOutlet var myView: UIView!
     @IBOutlet weak var tfNo: UITextField!
     @IBOutlet weak var tfName: UITextField!
@@ -52,7 +51,7 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         let id = tfId.text == nil ? "" : tfId.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let pw = tfPassword.text == nil ? "" : tfPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-   
+        
         switch job{
         case "管理員":
             job_no = "1"
@@ -64,10 +63,10 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
             job_no = ""
         }
         let manage = Manage(job_no: job_no, emp_id: id, emp_pw: pw, emp_name: name, emp_no: no, job_name: "")
-       
+        
         requestParam["action"] = "manageInsert"
         requestParam["insert"] = try! String(data: JSONEncoder().encode(manage), encoding: .utf8)
-      //    print("requestParam is ",requestParam)
+        //    print("requestParam is ",requestParam)
         executeTask(url_server!, requestParam) { (data, response, error) in
             if error == nil {
                 if data != nil {
@@ -77,7 +76,9 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
                                 // 新增成功則回前頁
                                 if count != 0 {                                    self.dismiss(animated:true, completion: nil)
                                 } else {
-                                    self.isFail.text = "Insert fail"
+                                    
+                                        self.showSimpleAlert(message: "新增失敗", viewController: self)
+                                    
                                 }
                             }
                         }
@@ -99,6 +100,14 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         btJob.setTitle(title, for: .normal)
         displayPickerView(false)
         job = title
+    }
+    
+    func showSimpleAlert(message: String, viewController: UIViewController) {
+        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "確認", style: .default)
+        alertController.addAction(cancel)
+        /* 呼叫present()才會跳出Alert Controller */
+        viewController.present(alertController, animated: true, completion:nil)
     }
     
     func displayPickerView(_ show: Bool){

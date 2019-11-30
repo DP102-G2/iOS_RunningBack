@@ -2,13 +2,13 @@
 //  PlateVC.swift
 //  RunningBack
 //
-//  Created by  明智 on 2019/11/27.
+//  Created by  明智 on 2019/11/29.
 //  Copyright © 2019 g2. All rights reserved.
 //
 
 import UIKit
 
-class PlateTVC: UITableViewController {
+class PlateVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,7 @@ class PlateTVC: UITableViewController {
      */
     
 }
-
-extension PlateTVC{
+extension PlateVC{
     func setBarButtonItem() {
         let logout = UIBarButtonItem(image: UIImage(named: "ic_logout"), style: .done, target: self, action: #selector(naviToLogin))
         navigationItem.rightBarButtonItems = [logout]
@@ -69,23 +68,5 @@ extension PlateTVC{
             job_no = 0
         }
         return job_no
-    }
-    
-    /**
-     呼叫即登出
-     */
-    //    func logout(VC:UIViewController) -> Bool {
-    //        let defaults = UserDefaults.standard
-    //        let dictionary = defaults.dictionaryRepresentation()
-    //        dictionary.keys.forEach { key in
-    //            defaults.removeObject(forKey: key)
-    //        }
-    //
-    //        if UserDefaults.standard.dictionaryRepresentation().keys.count == 0{
-    //            showSimpleAlert(message: "登出成功", viewController: VC)
-    //            return true
-    //        }
-    //        return false
-    //    }
-    
+}
 }

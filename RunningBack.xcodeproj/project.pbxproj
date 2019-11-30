@@ -13,14 +13,20 @@
 		A7060BC323868ECD00742FC4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7060BC223868ECD00742FC4 /* Login.storyboard */; };
 		A7060BC62386903300742FC4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7060BC52386903300742FC4 /* LoginVC.swift */; };
 		A7060BC82386C21100742FC4 /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7060BC72386C21100742FC4 /* UserDetailVC.swift */; };
+		A71EE2A3238E9B2D00DF55EF /* AdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71EE2A2238E9B2D00DF55EF /* AdTVC.swift */; };
 		A74EC4E5238A0AB6000451D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EC4E4238A0AB6000451D3 /* User.swift */; };
 		A74EC4E9238A210B000451D3 /* ManageUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EC4E8238A210B000451D3 /* ManageUpdateVC.swift */; };
 		A74EC4EB238A2B5F000451D3 /* ManageInsertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EC4EA238A2B5F000451D3 /* ManageInsertVC.swift */; };
-		A75479F5238E071800AB5876 /* AdTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75479F4238E071800AB5876 /* AdTVC.swift */; };
 		A75479F7238E073100AB5876 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75479F6238E073100AB5876 /* AdCell.swift */; };
 		A75479F9238E074400AB5876 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75479F8238E074400AB5876 /* Ad.swift */; };
 		A75479FB238E0E4F00AB5876 /* PlateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75479FA238E0E4F00AB5876 /* PlateTVC.swift */; };
 		A77AB74B23895FA2008C6FA8 /* Manage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AB74A23895FA2008C6FA8 /* Manage.swift */; };
+		A7823669238FC8F60043BD91 /* AdMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7823668238FC8F60043BD91 /* AdMainVC.swift */; };
+		A782366B238FCA310043BD91 /* PromotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782366A238FCA310043BD91 /* PromotionVC.swift */; };
+		A782366E238FE00F0043BD91 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782366D238FE00F0043BD91 /* Promotion.swift */; };
+		A782367023908FB90043BD91 /* PlateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782366F23908FB90043BD91 /* PlateVC.swift */; };
+		A78236742390E3530043BD91 /* PromotionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78236732390E3530043BD91 /* PromotionTVC.swift */; };
+		A78236D82391E3F60043BD91 /* AdDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78236D72391E3F60043BD91 /* AdDetailVC.swift */; };
 		A7867423238D0E9E00064293 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7867422238D0E9E00064293 /* Login.swift */; };
 		A788537323897A9D00D545B4 /* ManageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788537223897A9D00D545B4 /* ManageCell.swift */; };
 		A7C776EF2385705300018511 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C776EE2385705300018511 /* UserCell.swift */; };
@@ -50,14 +56,20 @@
 		A7060BC223868ECD00742FC4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A7060BC52386903300742FC4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A7060BC72386C21100742FC4 /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
+		A71EE2A2238E9B2D00DF55EF /* AdTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTVC.swift; sourceTree = "<group>"; };
 		A74EC4E4238A0AB6000451D3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A74EC4E8238A210B000451D3 /* ManageUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageUpdateVC.swift; sourceTree = "<group>"; };
 		A74EC4EA238A2B5F000451D3 /* ManageInsertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageInsertVC.swift; sourceTree = "<group>"; };
-		A75479F4238E071800AB5876 /* AdTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTVC.swift; sourceTree = "<group>"; };
 		A75479F6238E073100AB5876 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
 		A75479F8238E074400AB5876 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		A75479FA238E0E4F00AB5876 /* PlateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateTVC.swift; sourceTree = "<group>"; };
 		A77AB74A23895FA2008C6FA8 /* Manage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manage.swift; sourceTree = "<group>"; };
+		A7823668238FC8F60043BD91 /* AdMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMainVC.swift; sourceTree = "<group>"; };
+		A782366A238FCA310043BD91 /* PromotionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionVC.swift; sourceTree = "<group>"; };
+		A782366D238FE00F0043BD91 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		A782366F23908FB90043BD91 /* PlateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateVC.swift; sourceTree = "<group>"; };
+		A78236732390E3530043BD91 /* PromotionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionTVC.swift; sourceTree = "<group>"; };
+		A78236D72391E3F60043BD91 /* AdDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailVC.swift; sourceTree = "<group>"; };
 		A7867422238D0E9E00064293 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A788537223897A9D00D545B4 /* ManageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCell.swift; sourceTree = "<group>"; };
 		A7C776EE2385705300018511 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -125,9 +137,11 @@
 			isa = PBXGroup;
 			children = (
 				A93668F8238456D900088087 /* ad.storyboard */,
-				A75479F4238E071800AB5876 /* AdTVC.swift */,
 				A75479F6238E073100AB5876 /* AdCell.swift */,
 				A75479F8238E074400AB5876 /* Ad.swift */,
+				A71EE2A2238E9B2D00DF55EF /* AdTVC.swift */,
+				A7823668238FC8F60043BD91 /* AdMainVC.swift */,
+				A78236D72391E3F60043BD91 /* AdDetailVC.swift */,
 			);
 			path = Advertisement;
 			sourceTree = "<group>";
@@ -144,6 +158,16 @@
 				A788537223897A9D00D545B4 /* ManageCell.swift */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		A782366C238FDFEE0043BD91 /* Promotion */ = {
+			isa = PBXGroup;
+			children = (
+				A782366A238FCA310043BD91 /* PromotionVC.swift */,
+				A78236732390E3530043BD91 /* PromotionTVC.swift */,
+				A782366D238FE00F0043BD91 /* Promotion.swift */,
+			);
+			path = Promotion;
 			sourceTree = "<group>";
 		};
 		A7C776F02385706300018511 /* User */ = {
@@ -165,6 +189,7 @@
 			children = (
 				A93186AB23856031005D7E9A /* Common.swift */,
 				A75479FA238E0E4F00AB5876 /* PlateTVC.swift */,
+				A782366F23908FB90043BD91 /* PlateVC.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -201,6 +226,7 @@
 		A9C01CF923842794008C6FE9 /* RunningBack */ = {
 			isa = PBXGroup;
 			children = (
+				A782366C238FDFEE0043BD91 /* Promotion */,
 				A75479F3238E06EC00AB5876 /* Advertisement */,
 				A77AB74923895F8B008C6FA8 /* Admin */,
 				A7C776F02385706300018511 /* User */,
@@ -346,18 +372,24 @@
 				A704A4762388A81800CA50A1 /* UserOrderCell.swift in Sources */,
 				A74EC4E5238A0AB6000451D3 /* User.swift in Sources */,
 				A788537323897A9D00D545B4 /* ManageCell.swift in Sources */,
+				A782366E238FE00F0043BD91 /* Promotion.swift in Sources */,
 				A97F444323845B6E00620E96 /* AdminNC.swift in Sources */,
+				A78236742390E3530043BD91 /* PromotionTVC.swift in Sources */,
 				A7060BC82386C21100742FC4 /* UserDetailVC.swift in Sources */,
+				A7823669238FC8F60043BD91 /* AdMainVC.swift in Sources */,
 				A9C01CFB23842794008C6FE9 /* AppDelegate.swift in Sources */,
 				A74EC4E9238A210B000451D3 /* ManageUpdateVC.swift in Sources */,
+				A782366B238FCA310043BD91 /* PromotionVC.swift in Sources */,
 				A75479F9238E074400AB5876 /* Ad.swift in Sources */,
 				A7C776EF2385705300018511 /* UserCell.swift in Sources */,
-				A75479F5238E071800AB5876 /* AdTVC.swift in Sources */,
 				A93186A823845E30005D7E9A /* AdminTVC.swift in Sources */,
 				A7867423238D0E9E00064293 /* Login.swift in Sources */,
+				A71EE2A3238E9B2D00DF55EF /* AdTVC.swift in Sources */,
 				A7C776F42385FC8600018511 /* UserListTVC.swift in Sources */,
 				A9C01CFD23842794008C6FE9 /* SceneDelegate.swift in Sources */,
+				A782367023908FB90043BD91 /* PlateVC.swift in Sources */,
 				A704A4782388C7B500CA50A1 /* OrderStatus.swift in Sources */,
+				A78236D82391E3F60043BD91 /* AdDetailVC.swift in Sources */,
 				A77AB74B23895FA2008C6FA8 /* Manage.swift in Sources */,
 				A93186AC23856031005D7E9A /* Common.swift in Sources */,
 				A75479FB238E0E4F00AB5876 /* PlateTVC.swift in Sources */,
