@@ -20,7 +20,7 @@ class AdDetailVC: UIViewController {
         super.viewDidLoad()
         tfName.text = ad.pro_no
         myView.image = detailimage
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func btConfirm(_ sender: Any) {
