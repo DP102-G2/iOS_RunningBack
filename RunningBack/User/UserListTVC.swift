@@ -1,5 +1,5 @@
 import UIKit
-class UserListTVC: UITableViewController,UISearchBarDelegate{
+class UserListTVC: PlateTVC,UISearchBarDelegate{
     
     @IBOutlet weak var searchBar: UISearchBar!
     var users = [User]()
@@ -12,6 +12,7 @@ class UserListTVC: UITableViewController,UISearchBarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBarButtonItem()
         tableViewAddRefreshControl()
     }
     

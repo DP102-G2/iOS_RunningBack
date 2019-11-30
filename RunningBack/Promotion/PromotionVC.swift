@@ -13,13 +13,11 @@ class PromotionVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func btConfirm(_ sender: Any) {
         promotion.pro_no = tfName.text
         let requestParam = ["action": "promotionUpdate","promotion": try! String(data: JSONEncoder().encode(promotion), encoding: .utf8)]
-        
         getdata(input: requestParam as [String : Any])
-        print("requestParam is ",requestParam)
+    
     }
     
     func getdata(input:[String : Any]) {
@@ -45,8 +43,6 @@ class PromotionVC: UIViewController {
             }
         }
     }
-    
-    
     
     func showSimpleAlert(message: String, viewController: UIViewController) {
         let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)

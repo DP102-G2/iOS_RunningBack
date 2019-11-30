@@ -17,6 +17,22 @@ class AdMainVC: PlateVC {
         self.myView[0].isHidden = false
         self.myView[1].isHidden = true
         // Do any additional setup after loading the view.
+        job_no = getJob()
+        if job_no == 2 {
+            if let tabBarController = self.tabBarController {
+                var viewControllers = tabBarController.viewControllers
+                viewControllers?.remove(at: 0)
+                viewControllers?.remove(at: 3)
+                viewControllers?.remove(at: 1)
+                tabBarController.viewControllers = viewControllers
+            } }  else if job_no == 3{
+            if let tabBarController = self.tabBarController {
+                var viewControllers = tabBarController.viewControllers
+                viewControllers?.remove(at: 1)
+                viewControllers?.remove(at: 2)
+                tabBarController.viewControllers = viewControllers
+            } }
+        
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
@@ -36,16 +52,8 @@ class AdMainVC: PlateVC {
         else if job_no == 0 {
             naviToLogin()
         }
-        
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
+
+
+
