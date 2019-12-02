@@ -8,13 +8,14 @@
 
 import UIKit
 
-class AdDetailVC: UIViewController {
+class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var myView: UIImageView!
     @IBOutlet weak var tfName: UITextField!
     var ad: Ad!
     var ad_no: Int!
     var detailimage: UIImage?
+    var imageUpload: UIImage?
     let url_server = URL(string: common_url + "adproductServlet")
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,10 @@ class AdDetailVC: UIViewController {
     @IBAction func btConfirm(_ sender: Any) {
         ad.pro_no = tfName.text
         ad.ad_no = ad_no
-        let requestParam = ["action": "adproductUpdate","adproduct": try! String(data: JSONEncoder().encode(ad), encoding: .utf8)]
-        
+        var requestParam = ["action": "adproductUpdate","adproduct": try! String(data: JSONEncoder().encode(ad), encoding: .utf8)]
+        if self.imageUpload != nil {
+            requestParam["imageBase64"] = self.imageUpload!.jpegData(compressionQuality: 1.0)!.base64EncodedString()
+        }
         getdata(input: requestParam as [String : Any])
     }
     
@@ -55,6 +58,34 @@ class AdDetailVC: UIViewController {
         }
     }
     
+    @IBAction func clickPickerPicture(_ sender: Any) {
+        imagePicker(type: .photoLibrary)
+    }
+    func imagePicker(type: UIImagePickerController.SourceType) {
+        hideKeyboard()
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = type
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let spotImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // 拍照或挑選的照片視為要上傳更新的照片
+            imageUpload = spotImage
+            myView.image = spotImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func clickTakePicture(_ sender: Any) {
+        imagePicker(type: .camera)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func showSimpleAlert(message: String, viewController: UIViewController) {
         let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
         let cancel = UIAlertAction(title: "確認", style: .default)
@@ -62,6 +93,8 @@ class AdDetailVC: UIViewController {
         /* 呼叫present()才會跳出Alert Controller */
         viewController.present(alertController, animated: true, completion:nil)
     }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -72,4 +105,9 @@ class AdDetailVC: UIViewController {
     }
     */
 
+}
+extension AdDetailVC{
+    func hideKeyboard() {
+        tfName.resignFirstResponder()
+    }
 }
