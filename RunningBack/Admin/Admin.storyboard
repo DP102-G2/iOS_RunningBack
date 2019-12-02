@@ -19,42 +19,42 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" placeholder="員工姓名" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-y5-jKP">
-                                    <rect key="frame" x="0.0" y="27" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <searchBar contentMode="redraw" placeholder="員工姓名" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-y5-jKP">
+                                    <rect key="frame" x="0.0" y="25" width="414" height="44"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
                                         <outlet property="delegate" destination="icu-Td-fw8" id="g5r-ob-PBz"/>
                                     </connections>
                                 </searchBar>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="員工姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-BQ-YcG">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="員工姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-BQ-YcG">
                                     <rect key="frame" x="35" y="7" width="45" height="14"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="NbG-qP-If8"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-di-rdd">
-                                    <rect key="frame" x="60" y="71" width="35" height="21"/>
+                                    <rect key="frame" x="60" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiI-Ag-4UQ">
-                                    <rect key="frame" x="171" y="71" width="35" height="21"/>
+                                    <rect key="frame" x="171" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="職務" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-Qw-Dni">
-                                    <rect key="frame" x="286" y="71" width="35" height="21"/>
+                                    <rect key="frame" x="286" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-gc-Awk">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-gc-Awk">
                                     <rect key="frame" x="360" y="3" width="23" height="24"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <state key="normal" image="plus" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
@@ -66,12 +66,22 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstItem="6Mr-di-rdd" firstAttribute="firstBaseline" secondItem="iiI-Ag-4UQ" secondAttribute="firstBaseline" id="0oh-KW-TTx"/>
                                 <constraint firstAttribute="bottom" secondItem="6Mr-di-rdd" secondAttribute="bottom" constant="3" id="4Ky-1a-f5g"/>
+                                <constraint firstItem="4v7-BQ-YcG" firstAttribute="top" secondItem="Tjs-nO-2uY" secondAttribute="top" constant="7" id="4Sl-eQ-fWd"/>
                                 <constraint firstItem="OQ5-Qw-Dni" firstAttribute="leading" secondItem="iiI-Ag-4UQ" secondAttribute="trailing" constant="80" id="6fa-Gh-h5H"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="baseline" secondItem="iiI-Ag-4UQ" secondAttribute="baseline" id="K2A-sD-vN1"/>
+                                <constraint firstItem="iiI-Ag-4UQ" firstAttribute="firstBaseline" secondItem="OQ5-Qw-Dni" secondAttribute="firstBaseline" id="TxO-Lv-RZI"/>
+                                <constraint firstItem="l3b-y5-jKP" firstAttribute="top" secondItem="4v7-BQ-YcG" secondAttribute="bottom" constant="4" id="ZKl-Q2-Fog"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="baseline" secondItem="OQ5-Qw-Dni" secondAttribute="baseline" id="c9T-eF-CMv"/>
+                                <constraint firstItem="6Mr-di-rdd" firstAttribute="top" secondItem="l3b-y5-jKP" secondAttribute="bottom" constant="2.5" id="d8l-OM-E3F"/>
+                                <constraint firstItem="4v7-BQ-YcG" firstAttribute="leading" secondItem="Tjs-nO-2uY" secondAttribute="leading" constant="35" id="dwe-U8-Vsu"/>
                                 <constraint firstItem="iiI-Ag-4UQ" firstAttribute="leading" secondItem="6Mr-di-rdd" secondAttribute="trailing" constant="76" id="ehe-wx-QG6"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="leading" secondItem="Tjs-nO-2uY" secondAttribute="leading" constant="60" id="ge8-1R-EmD"/>
+                                <constraint firstAttribute="trailing" secondItem="DOf-gc-Awk" secondAttribute="trailing" constant="31" id="heM-43-Td9"/>
+                                <constraint firstItem="DOf-gc-Awk" firstAttribute="top" secondItem="Tjs-nO-2uY" secondAttribute="top" constant="3" id="rFn-ND-I1c"/>
+                                <constraint firstItem="l3b-y5-jKP" firstAttribute="leading" secondItem="Tjs-nO-2uY" secondAttribute="leading" id="u6A-kI-kQz"/>
+                                <constraint firstAttribute="trailing" secondItem="l3b-y5-jKP" secondAttribute="trailing" id="xZi-aC-RZo"/>
                             </constraints>
                         </view>
                         <prototypes>

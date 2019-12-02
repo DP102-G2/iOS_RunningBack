@@ -1,11 +1,3 @@
-//
-//  AdMainVC.swift
-//  RunningBack
-//
-//  Created by  明智 on 2019/11/28.
-//  Copyright © 2019 g2. All rights reserved.
-//
-
 import UIKit
 
 class AdMainVC: PlateVC {
@@ -42,16 +34,7 @@ class AdMainVC: PlateVC {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let logout = UIBarButtonItem(image: UIImage(named: "ic_logout"), style: .done, target: self, action: #selector(naviToLogin))
-        let admin = UIBarButtonItem(image: UIImage(named: "ic_Admin"), style: .done, target: self, action: #selector(naviToAdmin))
-        
-        job_no = getJob()
-        if job_no == 1{
-            navigationItem.rightBarButtonItems = [logout,admin]
-        }
-        else if job_no == 0 {
-            naviToLogin()
-        }
+        login()
     }
 }
 

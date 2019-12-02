@@ -55,12 +55,20 @@ extension PlateTVC{
         present(loginTabBar, animated: true, completion: nil)
     }
     
-    /**
-     抓取偏好設定裡面的user_no，
-     ````
-     let user_no = getUserNo()
-     ````
-     */
+    func login(){
+        var job_no = 0
+        let logout = UIBarButtonItem(image: UIImage(named: "ic_logout"), style: .done, target: self, action: #selector(naviToLogin))
+        let admin = UIBarButtonItem(image: UIImage(named: "ic_Admin"), style: .done, target: self, action: #selector(naviToAdmin))
+        
+        job_no = getJob()
+        if job_no == 1{
+            navigationItem.rightBarButtonItems = [logout,admin]
+        }
+        else if job_no == 0 {
+            naviToLogin()
+        }
+    }
+    
     func getJob() -> Int {
         var job_no = 0
         if let noStr = UserDefaults.standard.value(forKey: "job_no") {

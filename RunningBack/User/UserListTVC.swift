@@ -23,7 +23,9 @@ class UserListTVC: PlateTVC,UISearchBarDelegate{
         refreshControl.addTarget(self, action: #selector(showAllUsers), for: .valueChanged)
         self.tableView.refreshControl = refreshControl
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        login()
+    }
     override func viewWillAppear(_ animated: Bool) {
         showAllUsers()
     }
