@@ -86,20 +86,20 @@
                                 <rect key="frame" x="87" y="140" width="240" height="127.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-2R-zLh">
-                                <rect key="frame" x="232" y="306" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="挑選照片"/>
-                                <connections>
-                                    <action selector="clickPickerPicture:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="gRn-HS-mbP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRo-QP-g4x">
                                 <rect key="frame" x="144" y="306" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="拍照"/>
                                 <connections>
                                     <action selector="clickTakePicture:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="6VQ-E7-ne9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-2R-zLh">
+                                <rect key="frame" x="221" y="306" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="挑選照片"/>
+                                <connections>
+                                    <action selector="clickPickerPicture:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="gRn-HS-mbP"/>
                                 </connections>
                             </button>
                         </subviews>
