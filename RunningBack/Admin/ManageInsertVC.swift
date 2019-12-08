@@ -62,33 +62,37 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         default:
             job_no = ""
         }
-        let manage = Manage(job_no: job_no, emp_id: id, emp_pw: pw, emp_name: name, emp_no: no, job_name: "")
         
-        requestParam["action"] = "manageInsert"
-        requestParam["insert"] = try! String(data: JSONEncoder().encode(manage), encoding: .utf8)
-        //    print("requestParam is ",requestParam)
-        executeTask(url_server!, requestParam) { (data, response, error) in
-            if error == nil {
-                if data != nil {
-                    if let result = String(data: data!, encoding: .utf8) {
-                        if let count = Int(result) {
-                            DispatchQueue.main.async {
-                                // 新增成功則回前頁
-                                if count != 0 {                                    self.dismiss(animated:true, completion: nil)
-                                } else {
-                                    
+        if(name == "" || no == "" || id == "" || pw == "" || job_no == ""){
+            self.showSimpleAlert(message: "新增失敗", viewController: self)
+        }else{
+            let manage = Manage(job_no: job_no, emp_id: id, emp_pw: pw, emp_name: name, emp_no: no, job_name: "")
+            
+            requestParam["action"] = "manageInsert"
+            requestParam["insert"] = try! String(data: JSONEncoder().encode(manage), encoding: .utf8)
+            //    print("requestParam is ",requestParam)
+            executeTask(url_server!, requestParam) { (data, response, error) in
+                if error == nil {
+                    if data != nil {
+                        if let result = String(data: data!, encoding: .utf8) {
+                            if let count = Int(result) {
+                                DispatchQueue.main.async {
+                                    // 新增成功則回前頁
+                                    if count != 0 {                                    self.dismiss(animated:true, completion: nil)
+                                    } else {
+                                        
                                         self.showSimpleAlert(message: "新增失敗", viewController: self)
-                                    
+                                        
+                                    }
                                 }
                             }
                         }
                     }
+                } else {
+                    print(error!.localizedDescription)
                 }
-            } else {
-                print(error!.localizedDescription)
             }
         }
-        
     }
     
     @IBAction func selectClick(_ sender: Any) {
