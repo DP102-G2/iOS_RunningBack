@@ -17,7 +17,7 @@ class PromotionVC: UIViewController {
         promotion.pro_no = tfName.text
         let requestParam = ["action": "promotionUpdate","promotion": try! String(data: JSONEncoder().encode(promotion), encoding: .utf8)]
         getdata(input: requestParam as [String : Any])
-    
+        
     }
     
     func getdata(input:[String : Any]) {
@@ -32,8 +32,9 @@ class PromotionVC: UIViewController {
                                     self.tfName.text = self.promotion.pro_no
                                     self.navigationController?.popViewController(animated: true)
                                 } else {
+                                    self.showSimpleAlert(message: "修改失敗", viewController: self)
                                 }
-                                self.showSimpleAlert(message: "修改失敗", viewController: self)
+                                
                             }
                         }
                     }

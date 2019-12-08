@@ -9,7 +9,7 @@
 import UIKit
 
 class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var myView: UIImageView!
     @IBOutlet weak var tfName: UITextField!
     var ad: Ad!
@@ -27,15 +27,13 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
     @IBAction func btConfirm(_ sender: Any) {
         ad.pro_no = tfName.text
         ad.ad_no = ad_no
-        var requestParam = ["action": "adproductUpdate","adproduct": try! String(data: JSONEncoder().encode(ad), encoding: .utf8)]
+        var requestParam = [String: String]()
+        requestParam["action"] = "adproductUpdate"
+        requestParam["adproduct"] = try! String(data: JSONEncoder().encode(self.ad), encoding: .utf8)
         if self.imageUpload != nil {
-            requestParam["imageBase64"] = self.imageUpload!.jpegData(compressionQuality: 1.0)!.base64EncodedString()
+            requestParam["imageBase64"] = self.imageUpload!.jpegData(compressionQuality: 0.5)!.base64EncodedString()
         }
-        getdata(input: requestParam as [String : Any])
-    }
-    
-    func getdata(input:[String : Any]) {
-        executeTask(url_server!, input) { (data, response, error) in
+        executeTask(self.url_server!, requestParam) { (data, response, error) in
             if error == nil {
                 if data != nil {
                     if let result = String(data: data!, encoding: .utf8) {
@@ -43,11 +41,12 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
                             DispatchQueue.main.async {
                                 // 新增成功則回前頁
                                 if count != 0 {
-                                    self.tfName.text = self.ad.pro_no
                                     self.navigationController?.popViewController(animated: true)
+
                                 } else {
+                                    self.showSimpleAlert(message: "修改失敗", viewController: self)
                                 }
-                                self.showSimpleAlert(message: "修改失敗", viewController: self)
+                                
                             }
                         }
                     }
@@ -57,7 +56,7 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
             }
         }
     }
-    
+
     @IBAction func clickPickerPicture(_ sender: Any) {
         imagePicker(type: .photoLibrary)
     }
@@ -93,18 +92,6 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
         /* 呼叫present()才會跳出Alert Controller */
         viewController.present(alertController, animated: true, completion:nil)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension AdDetailVC{
     func hideKeyboard() {

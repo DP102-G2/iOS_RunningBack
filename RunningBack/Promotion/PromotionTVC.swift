@@ -26,7 +26,7 @@ class PromotionTVC: UITableViewController {
         self.navigationController?.pushViewController(promotionDetail, animated: true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         showAllPromotion()
     }
     

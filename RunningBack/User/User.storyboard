@@ -29,23 +29,20 @@
                                         <outlet property="delegate" destination="4pu-8f-37d" id="qRL-rY-aKf"/>
                                     </connections>
                                 </searchBar>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf1-nP-l2B">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf1-nP-l2B">
                                     <rect key="frame" x="63" y="74" width="35" height="20.5"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b26-J0-TQv">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b26-J0-TQv">
                                     <rect key="frame" x="171" y="74" width="35" height="20.5"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="會員姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-9f-QXG">
-                                    <rect key="frame" x="35" y="7" width="45" height="14"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="會員姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-9f-QXG">
+                                    <rect key="frame" x="35" y="7" width="45" height="13.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -54,8 +51,14 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="9i6-dx-cDk" firstAttribute="leading" secondItem="W5u-wv-tDY" secondAttribute="leading" id="0Jz-dZ-Npp"/>
+                                <constraint firstItem="ISV-9f-QXG" firstAttribute="leading" secondItem="W5u-wv-tDY" secondAttribute="leading" constant="35" id="2ij-4g-uaS"/>
                                 <constraint firstItem="9i6-dx-cDk" firstAttribute="top" secondItem="W5u-wv-tDY" secondAttribute="top" constant="27" id="CLS-uG-V3K"/>
+                                <constraint firstItem="b26-J0-TQv" firstAttribute="top" secondItem="9i6-dx-cDk" secondAttribute="bottom" constant="6.5" id="SRe-pf-rCl"/>
+                                <constraint firstItem="b26-J0-TQv" firstAttribute="leading" secondItem="Wf1-nP-l2B" secondAttribute="trailing" constant="73" id="YlE-lJ-YxU"/>
+                                <constraint firstItem="ISV-9f-QXG" firstAttribute="top" secondItem="W5u-wv-tDY" secondAttribute="top" constant="7" id="eCm-RV-34n"/>
                                 <constraint firstItem="9i6-dx-cDk" firstAttribute="centerX" secondItem="W5u-wv-tDY" secondAttribute="centerX" id="lxI-hB-7FQ"/>
+                                <constraint firstItem="Wf1-nP-l2B" firstAttribute="top" secondItem="9i6-dx-cDk" secondAttribute="bottom" constant="6.5" id="mZ3-fk-OP5"/>
+                                <constraint firstItem="Wf1-nP-l2B" firstAttribute="leading" secondItem="W5u-wv-tDY" secondAttribute="leading" constant="63" id="zFy-h3-CYu"/>
                             </constraints>
                         </view>
                         <prototypes>
