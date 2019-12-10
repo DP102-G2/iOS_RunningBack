@@ -74,7 +74,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXG-kF-7Vd">
                                 <rect key="frame" x="191" y="479" width="32" height="30"/>
-                                <state key="normal" title="確定"/>
+                                <state key="normal" title="確定">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btConfirm:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="BvE-fo-Orw"/>
                                 </connections>
@@ -86,14 +88,18 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRo-QP-g4x">
                                 <rect key="frame" x="144" y="326" width="31" height="30"/>
-                                <state key="normal" title="拍照"/>
+                                <state key="normal" title="拍照">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickTakePicture:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="6VQ-E7-ne9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-2R-zLh">
                                 <rect key="frame" x="219" y="326" width="62" height="30"/>
-                                <state key="normal" title="挑選照片"/>
+                                <state key="normal" title="挑選照片">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickPickerPicture:" destination="8QQ-Iw-zpU" eventType="touchUpInside" id="gRn-HS-mbP"/>
                                 </connections>
@@ -143,13 +149,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-kO-te5">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="segmentedControl" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-kO-te5">
                                 <rect key="frame" x="81" y="107" width="246" height="32"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="主廣告"/>
                                     <segment title="每日好康"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="changeView:" destination="aLC-VG-R61" eventType="valueChanged" id="l9b-Va-Mp6"/>
                                 </connections>
@@ -179,6 +185,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="管理廣告" id="Lzg-oJ-fYu"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="b6m-kO-te5" id="Qg5-SZ-MBs"/>
                         <outletCollection property="myView" destination="MKO-Xq-LEm" collectionClass="NSMutableArray" id="B0k-PN-dBO"/>
                         <outletCollection property="myView" destination="Lg2-c3-Bia" collectionClass="NSMutableArray" id="BOc-zl-vAq"/>
                     </connections>
@@ -197,6 +204,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w43-hc-fq9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -387,7 +403,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mb-zE-0OT">
                                 <rect key="frame" x="192" y="267" width="31" height="30"/>
-                                <state key="normal" title="確定"/>
+                                <state key="normal" title="確定">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btConfirm:" destination="DSg-Fb-Gop" eventType="touchUpInside" id="sRU-kw-RTk"/>
                                 </connections>

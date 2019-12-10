@@ -24,7 +24,6 @@ class AdMainVC: PlateVC {
                 viewControllers?.remove(at: 2)
                 tabBarController.viewControllers = viewControllers
             } }
-        
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
@@ -33,6 +32,7 @@ class AdMainVC: PlateVC {
         
     }
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidAppear(_ animated: Bool) {
         login()
     }

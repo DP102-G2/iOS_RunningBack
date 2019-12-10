@@ -42,6 +42,7 @@ class UserListTVC: PlateTVC,UISearchBarDelegate{
                     if let result = try? JSONDecoder().decode([User].self, from: data!) {
                         self.users = result
                         DispatchQueue.main.async {
+                            
                             if let control = self.tableView.refreshControl {
                                 if control.isRefreshing {
                                     // 停止下拉更新動作

@@ -25,13 +25,15 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
     }
     
     @IBAction func btConfirm(_ sender: Any) {
+
         ad.pro_no = tfName.text
         ad.ad_no = ad_no
         var requestParam = [String: String]()
         requestParam["action"] = "adproductUpdate"
         requestParam["adproduct"] = try! String(data: JSONEncoder().encode(self.ad), encoding: .utf8)
         if self.imageUpload != nil {
-            requestParam["imageBase64"] = self.imageUpload!.jpegData(compressionQuality: 0.5)!.base64EncodedString()
+            requestParam["imageBase64"] = self.imageUpload!.jpegData(compressionQuality: 1.0)!.base64EncodedString()
+                
         }
         executeTask(self.url_server!, requestParam) { (data, response, error) in
             if error == nil {
@@ -46,7 +48,7 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
                                 } else {
                                     self.showSimpleAlert(message: "修改失敗", viewController: self)
                                 }
-                                
+
                             }
                         }
                     }
@@ -56,7 +58,7 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
             }
         }
     }
-
+    
     @IBAction func clickPickerPicture(_ sender: Any) {
         imagePicker(type: .photoLibrary)
     }
@@ -73,6 +75,7 @@ class AdDetailVC: UIViewController,UIImagePickerControllerDelegate,UINavigationC
             // 拍照或挑選的照片視為要上傳更新的照片
             imageUpload = spotImage
             myView.image = spotImage
+            
         }
         dismiss(animated: true, completion: nil)
     }

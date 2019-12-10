@@ -82,7 +82,7 @@ class AdTVC: PlateTVC {
         requestParam["action"] = "getImage"
         requestParam["pro_no"] = ad.pro_no
         requestParam["ad_no"] = indexPath.row + 1
-        requestParam["imageSize"] = cell.frame.width / 4
+        requestParam["imageSize"] = cell.frame.width
         // 圖片寬度為tableViewCell的1/4，ImageView的寬度也建議在storyboard加上比例設定的constraint
         var image: UIImage?
         executeTask(url_server!, requestParam) { (data, response, error) in

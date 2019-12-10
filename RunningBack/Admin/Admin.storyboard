@@ -32,30 +32,31 @@
                                         <constraint firstAttribute="height" constant="14" id="NbG-qP-If8"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-di-rdd">
                                     <rect key="frame" x="60" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiI-Ag-4UQ">
                                     <rect key="frame" x="171" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="職務" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-Qw-Dni">
                                     <rect key="frame" x="286" y="71.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-gc-Awk">
                                     <rect key="frame" x="360" y="3" width="23" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" image="plus" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                     </state>
@@ -188,7 +189,9 @@
                                 <rect key="frame" x="238" y="489" width="57" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="取消"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btCancel:" destination="Koy-KQ-USr" eventType="touchUpInside" id="YuP-bD-Ovw"/>
                                 </connections>
@@ -197,7 +200,9 @@
                                 <rect key="frame" x="102" y="489" width="57" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="確認"/>
+                                <state key="normal" title="確認">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btConfirm:" destination="Koy-KQ-USr" eventType="touchUpInside" id="hwN-dq-qgK"/>
                                 </connections>
@@ -232,7 +237,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EE-DO-JnO">
                                 <rect key="frame" x="216" y="337" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectClick:" destination="Koy-KQ-USr" eventType="touchUpInside" id="BuN-oO-lil"/>
                                 </connections>
@@ -280,7 +287,9 @@
                         </pickerView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGd-4K-19F">
                             <rect key="frame" x="202" y="0.0" width="31" height="30"/>
-                            <state key="normal" title="完成"/>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="doneClick:" destination="Koy-KQ-USr" eventType="touchUpInside" id="em5-kD-aIp"/>
                             </connections>
@@ -310,6 +319,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wTN-AD-LkY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -375,7 +393,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OD-A7-WmB">
                                 <rect key="frame" x="238" y="489" width="57" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="取消"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btCancel:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="od6-tq-w4q"/>
                                 </connections>
@@ -383,7 +403,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv1-TS-koW">
                                 <rect key="frame" x="102" y="489" width="57" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="確認"/>
+                                <state key="normal" title="確認">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btConfirm:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="yDe-JX-1wQ"/>
                                 </connections>
@@ -419,9 +441,20 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-aD-avo">
                                 <rect key="frame" x="238" y="338" width="46" height="30"/>
-                                <state key="normal" title="請選擇"/>
+                                <state key="normal" title="管理員">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectClick:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="48c-mX-QDO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-7V-0z0">
+                                <rect key="frame" x="348" y="89" width="62" height="30"/>
+                                <state key="normal" title="測試資料">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="set:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="PUU-DT-ZLX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -432,12 +465,14 @@
                             <constraint firstItem="Y27-OQ-QqF" firstAttribute="top" secondItem="vdc-4D-fvz" secondAttribute="top" constant="50" id="8ja-CP-nKx"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="trailing" secondItem="e0u-MF-ybP" secondAttribute="trailing" id="DMe-Bh-5qu"/>
                             <constraint firstItem="Kdl-aD-avo" firstAttribute="top" secondItem="8iL-9E-baq" secondAttribute="bottom" constant="31" id="GV5-Lp-Jtg"/>
+                            <constraint firstItem="MfV-7V-0z0" firstAttribute="leading" secondItem="s0w-za-BQA" secondAttribute="trailing" constant="33" id="S22-sp-9p3"/>
                             <constraint firstItem="s0w-za-BQA" firstAttribute="leading" secondItem="Y27-OQ-QqF" secondAttribute="trailing" constant="44" id="aPr-9l-4e0"/>
                             <constraint firstItem="Y27-OQ-QqF" firstAttribute="leading" secondItem="vdc-4D-fvz" secondAttribute="leading" constant="87" id="avV-JU-osG"/>
                             <constraint firstItem="mv1-TS-koW" firstAttribute="centerX" secondItem="Y27-OQ-QqF" secondAttribute="centerX" id="bAK-oM-LjR"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="centerY" secondItem="Y27-OQ-QqF" secondAttribute="centerY" id="h52-Vn-XOT"/>
                             <constraint firstItem="NJl-UA-4qS" firstAttribute="leading" secondItem="e0u-MF-ybP" secondAttribute="leading" id="hnz-Ll-N3D"/>
                             <constraint firstItem="e0u-MF-ybP" firstAttribute="leading" secondItem="Y27-OQ-QqF" secondAttribute="trailing" constant="44" id="krm-tG-zL5"/>
+                            <constraint firstItem="MfV-7V-0z0" firstAttribute="top" secondItem="vdc-4D-fvz" secondAttribute="top" constant="45" id="lGw-1R-8Lh"/>
                             <constraint firstItem="s0w-za-BQA" firstAttribute="top" secondItem="vdc-4D-fvz" secondAttribute="top" constant="45" id="leU-Fe-JE5"/>
                             <constraint firstItem="e0u-MF-ybP" firstAttribute="top" secondItem="s0w-za-BQA" secondAttribute="bottom" constant="27" id="n1p-ti-Sa1"/>
                             <constraint firstItem="8iL-9E-baq" firstAttribute="top" secondItem="NJl-UA-4qS" secondAttribute="bottom" constant="29" id="ntT-SO-se3"/>
@@ -474,7 +509,9 @@
                         </pickerView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvV-qp-r2A">
                             <rect key="frame" x="202" y="0.0" width="31" height="30"/>
-                            <state key="normal" title="完成"/>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="doneClick:" destination="Koy-KQ-USr" eventType="touchUpInside" id="R9Y-DE-UZn"/>
                                 <action selector="doneClick:" destination="ge1-ZY-dSn" eventType="touchUpInside" id="SrO-9m-2oK"/>

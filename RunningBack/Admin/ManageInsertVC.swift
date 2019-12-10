@@ -2,7 +2,7 @@ import UIKit
 
 class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource{
     var job_no = ""
-    var job = ""
+    var job = "管理員"
     let url_server = URL(string: common_url + "ManageServlet")
     var manageList = ["管理員","客服","商品部"]
     
@@ -44,6 +44,12 @@ class ManageInsertVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         return manageList[row]
     }
     
+    @IBAction func set(_ sender: Any) {
+    tfName.text = "Tony"
+    tfNo.text = "4"
+    tfId.text = "45678"
+    tfPassword.text = "45678"
+    }
     @IBAction func btConfirm(_ sender: Any) {
         var requestParam = [String: String]()
         let name = tfName.text == nil ? "" : tfName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
