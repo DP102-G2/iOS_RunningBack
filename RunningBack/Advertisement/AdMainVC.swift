@@ -24,6 +24,8 @@ class AdMainVC: PlateVC {
                 viewControllers?.remove(at: 2)
                 tabBarController.viewControllers = viewControllers
             } }
+        
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
