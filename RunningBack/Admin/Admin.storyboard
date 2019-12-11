@@ -16,11 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Tjs-nO-2uY">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <searchBar contentMode="redraw" placeholder="員工姓名" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-y5-jKP">
-                                    <rect key="frame" x="0.0" y="25" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="31" width="414" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="lSV-mF-Sww"/>
+                                    </constraints>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
                                         <outlet property="delegate" destination="icu-Td-fw8" id="g5r-ob-PBz"/>
@@ -36,29 +39,29 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-di-rdd">
-                                    <rect key="frame" x="60" y="71.5" width="35" height="20.5"/>
+                                    <rect key="frame" x="60" y="77.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiI-Ag-4UQ">
-                                    <rect key="frame" x="171" y="71.5" width="35" height="20.5"/>
+                                    <rect key="frame" x="171" y="77.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="職務" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-Qw-Dni">
-                                    <rect key="frame" x="286" y="71.5" width="35" height="20.5"/>
+                                    <rect key="frame" x="286" y="77.5" width="35" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-gc-Awk">
-                                    <rect key="frame" x="360" y="3" width="23" height="24"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <rect key="frame" x="353" y="3" width="30" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" image="plus" catalog="system">
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28"/>
                                     </state>
                                     <connections>
                                         <segue destination="ge1-ZY-dSn" kind="presentation" modalPresentationStyle="fullScreen" id="47D-nn-GVG"/>
@@ -73,9 +76,8 @@
                                 <constraint firstItem="OQ5-Qw-Dni" firstAttribute="leading" secondItem="iiI-Ag-4UQ" secondAttribute="trailing" constant="80" id="6fa-Gh-h5H"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="baseline" secondItem="iiI-Ag-4UQ" secondAttribute="baseline" id="K2A-sD-vN1"/>
                                 <constraint firstItem="iiI-Ag-4UQ" firstAttribute="firstBaseline" secondItem="OQ5-Qw-Dni" secondAttribute="firstBaseline" id="TxO-Lv-RZI"/>
-                                <constraint firstItem="l3b-y5-jKP" firstAttribute="top" secondItem="4v7-BQ-YcG" secondAttribute="bottom" constant="4" id="ZKl-Q2-Fog"/>
+                                <constraint firstItem="l3b-y5-jKP" firstAttribute="top" secondItem="4v7-BQ-YcG" secondAttribute="bottom" constant="10" id="ZKl-Q2-Fog"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="baseline" secondItem="OQ5-Qw-Dni" secondAttribute="baseline" id="c9T-eF-CMv"/>
-                                <constraint firstItem="6Mr-di-rdd" firstAttribute="top" secondItem="l3b-y5-jKP" secondAttribute="bottom" constant="2.5" id="d8l-OM-E3F"/>
                                 <constraint firstItem="4v7-BQ-YcG" firstAttribute="leading" secondItem="Tjs-nO-2uY" secondAttribute="leading" constant="35" id="dwe-U8-Vsu"/>
                                 <constraint firstItem="iiI-Ag-4UQ" firstAttribute="leading" secondItem="6Mr-di-rdd" secondAttribute="trailing" constant="76" id="ehe-wx-QG6"/>
                                 <constraint firstItem="6Mr-di-rdd" firstAttribute="leading" secondItem="Tjs-nO-2uY" secondAttribute="leading" constant="60" id="ge8-1R-EmD"/>
@@ -87,7 +89,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="manageCell" rowHeight="78" id="uXj-5N-rbc" customClass="ManageCell" customModule="RunningBack" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="123" width="414" height="78"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXj-5N-rbc" id="fxG-Br-YdF">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
@@ -236,7 +238,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EE-DO-JnO">
-                                <rect key="frame" x="216" y="337" width="46" height="30"/>
+                                <rect key="frame" x="218" y="337" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -258,7 +260,7 @@
                             <constraint firstItem="su3-jp-iSV" firstAttribute="top" secondItem="5Hk-9R-jkK" secondAttribute="bottom" constant="33" id="nOx-JU-YoZ"/>
                             <constraint firstItem="su3-jp-iSV" firstAttribute="leading" secondItem="eah-lw-uIT" secondAttribute="trailing" constant="44" id="uFi-FI-xGW"/>
                             <constraint firstItem="aVi-QS-D2U" firstAttribute="leading" secondItem="aTI-8i-Qms" secondAttribute="leading" constant="218" id="uII-S5-oEj"/>
-                            <constraint firstItem="5EE-DO-JnO" firstAttribute="leading" secondItem="eah-lw-uIT" secondAttribute="trailing" constant="42" id="xUt-7L-X2P"/>
+                            <constraint firstItem="5EE-DO-JnO" firstAttribute="leading" secondItem="eah-lw-uIT" secondAttribute="trailing" constant="44" id="xUt-7L-X2P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aTI-8i-Qms"/>
                     </view>
